@@ -1,0 +1,17 @@
+{
+  "title": "rppg10-eval-harness: camera-based heart-rate extraction scored against synchronized ECG",
+  "description": "A reproducible offline method for comparing camera-derived pulse estimates with synchronized ECG reference measurements. Public releases exclude source data, model weights, subject-linked rows, selected operating thresholds, and unpublished experiment choices.",
+  "creators": [
+    { "name": "Switzer, Belinda" }
+  ],
+  "license": "Apache-2.0",
+  "upload_type": "software",
+  "keywords": [
+    "rppg",
+    "remote-photoplethysmography",
+    "heart-rate",
+    "ecg",
+    "evaluation-harness",
+    "dataset-rppg-10"
+  ]
+}

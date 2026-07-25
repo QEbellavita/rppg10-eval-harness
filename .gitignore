@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Extractor outputs / artifacts
+out/
+output/
+waveforms/
+hr_timeline/
+ingest/
+*.parquet
+
+# Local dataset copies (large; keep out of git)
+data/
+Dataset_rPPG-10/
+*.avi
+
+# OS
+.DS_Store
+.superpowers/
+
+# run logs
+out_run.log
+
+# mcd dataset run outputs (large; regenerate from extractor)
+out_mcd/
+out_mcd_detect/
+out_mcd_scale/
+data/mcd_scale_shim/
+
+# PhysNet fine-tune cache (large; regenerate from scripts/mcd_preprocess.py)
+mcd_finetune_cache/
+finetuned_physnet_mcd.pth

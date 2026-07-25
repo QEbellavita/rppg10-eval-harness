@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "rppg10-eval-harness: camera-based heart-rate extraction scored against synchronized ECG"
+type: software
+authors:
+  - family-names: Switzer
+    given-names: Belinda
+date-released: 2026-07-22
+license: Apache-2.0
+repository-code: "https://github.com/QEbellavita/rppg10-eval-harness"
+keywords:
+  - rppg
+  - remote-photoplethysmography
+  - heart-rate
+  - ecg
+  - evaluation-harness
+  - dataset-rppg-10
+abstract: >-
+  A reproducible offline method for comparing camera-derived pulse estimates
+  with synchronized ECG reference measurements. Public releases exclude source
+  data, model weights, subject-linked rows, selected operating thresholds, and
+  unpublished experiment choices.

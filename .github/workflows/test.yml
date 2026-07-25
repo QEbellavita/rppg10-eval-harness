@@ -1,0 +1,21 @@
+name: tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: pip install -r requirements.txt
+      # The harness wraps rPPG-Toolbox extraction methods; tests exercise the
+      # real checkout (numpy-path methods only ;  no torch needed).
+      - run: git clone --depth 1 https://github.com/ubicomplab/rPPG-Toolbox "$HOME/rppg-toolbox"
+      - run: pytest -q
+        env:
+          RPPG_TOOLBOX_PATH: /home/runner/rppg-toolbox

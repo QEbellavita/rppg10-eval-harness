@@ -1,0 +1,8 @@
+numpy==1.26.4
+scipy==1.13.1
+opencv-python==4.10.0.84
+pandas==2.2.2
+pyarrow==16.1.0
+scikit-learn==1.4.2
+scikit-image==0.24.0
+pytest==8.2.2
